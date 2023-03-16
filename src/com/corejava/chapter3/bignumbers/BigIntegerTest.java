@@ -1,8 +1,9 @@
-package com.corejava.controlflow;
+package com.corejava.chapter3.bignumbers;
 
+import java.math.BigInteger;
 import java.util.Scanner;
 
-public class LotteryOdds {
+public class BigIntegerTest {
     public static void main(String[] args) {
 
         Scanner in = new Scanner(System.in);
@@ -12,11 +13,10 @@ public class LotteryOdds {
         System.out.print("What is the highest number you can draw? ");
         int n = in.nextInt();
 
-        //compute binomial coefficient n*(n-1)*n(n-2)*...*(n-k+1)/(1*2*3*...*k)
+        BigInteger lotteryOdds = BigInteger.valueOf(1);
 
-        int lotteryOdds = 1;
-        for (int i = 1; i<= k; i++)
-            lotteryOdds = lotteryOdds * (n-1 +1) / i;
+        for (int i = 1; i <= k; i++)
+            lotteryOdds = lotteryOdds.multiply(BigInteger.valueOf(n-i+1)).divide(BigInteger.valueOf(i));
 
         System.out.println("Your odds are 1 in " + lotteryOdds + ". Good luck!");
     }

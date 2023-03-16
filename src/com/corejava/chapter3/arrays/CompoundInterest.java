@@ -1,4 +1,4 @@
-package com.corejava.arrays;
+package com.corejava.chapter3.arrays;
 
 public class CompoundInterest {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package com.corejava.controlflow;
+package com.corejava.chapter3.controlflow;
 
 import java.util.Scanner;
 
