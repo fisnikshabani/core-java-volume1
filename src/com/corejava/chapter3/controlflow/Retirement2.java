@@ -32,6 +32,8 @@ public class Retirement2 {
             input = in.next();
         }
 
-        while (input.equals("N"));
+        while (input.equals("N") || input.equals("n"));
+
+        System.out.printf("After year %d, your balance is %,.2f%n", year, balance);
     }
 }
