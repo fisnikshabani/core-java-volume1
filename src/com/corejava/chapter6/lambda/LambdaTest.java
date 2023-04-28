@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.util.Arrays;
 import java.util.Date;
 
-public class LambdaTest {
+public class  LambdaTest {
 
     public static void main(String[] args) {
 
